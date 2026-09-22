@@ -19,13 +19,10 @@ header{position:sticky;top:0;z-index:20;background:rgba(250,250,253,.9);backdrop
 .logo small{display:block;font-size:9px;letter-spacing:.18em;color:var(--muted);font-weight:600;margin-top:-4px}
 nav a{font-size:13px;margin-left:24px;color:#555;transition:.2s}
 nav a:hover{color:var(--accent)}
-.hero{max-width:1180px;margin:auto;padding:88px 28px 56px;display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:end}
+.hero{max-width:1180px;margin:auto;padding:88px 28px 56px}
 .kicker{font-size:11px;letter-spacing:.2em;color:var(--accent);font-weight:800}
-h1{font-size:clamp(42px,7vw,82px);line-height:.98;margin:12px 0 22px;letter-spacing:-.04em}
+h1{font-size:clamp(36px,6vw,68px);line-height:1.2;margin:12px 0 20px;letter-spacing:-.02em}
 .lead{max-width:650px;color:#62626b;font-size:15px}
-.hero-note{justify-self:end;border:1px solid var(--line);background:#fff;border-radius:22px;padding:28px;max-width:330px;box-shadow:0 15px 40px rgba(40,35,70,.05)}
-.hero-note strong{font-size:18px}
-.hero-note p{font-size:13px;color:var(--muted);margin-bottom:0}
 .section{max-width:1180px;margin:auto;padding:45px 28px 90px}
 .section-head{display:flex;align-items:end;justify-content:space-between;gap:20px;margin-bottom:30px}
 .section-head h2{font-size:30px;margin:0;letter-spacing:-.03em}
@@ -42,6 +39,11 @@ h1{font-size:clamp(42px,7vw,82px);line-height:.98;margin:12px 0 22px;letter-spac
 .work-meta{padding:17px 19px 20px}
 .category{font-size:9px;letter-spacing:.14em;color:var(--accent);font-weight:800}
 .work-meta h2{font-size:15px;line-height:1.55;margin:7px 0 0}
+
+.back-container{max-width:1180px;margin:auto;padding:20px 28px 60px;text-align:center}
+.back-btn{display:inline-flex;align-items:center;gap:8px;padding:14px 32px;background:var(--ink);color:#fff;border-radius:999px;font-size:14px;font-weight:600;letter-spacing:.05em;transition:.2s;box-shadow:0 4px 15px rgba(0,0,0,.1)}
+.back-btn:hover{background:var(--accent);transform:translateY(-2px)}
+
 footer{border-top:1px solid var(--line);padding:35px 28px;text-align:center;color:var(--muted);font-size:11px}
 .modal{position:fixed;inset:0;background:rgba(12,12,16,.88);z-index:100;display:none;align-items:center;justify-content:center;padding:28px}
 .modal.open{display:flex}
@@ -51,7 +53,7 @@ footer{border-top:1px solid var(--line);padding:35px 28px;text-align:center;colo
 .close{position:fixed;top:18px;right:22px;color:#fff;background:none;border:0;font-size:34px;cursor:pointer}
 @media(max-width:720px){
   .nav{padding:13px 18px} nav a{margin-left:12px;font-size:11px}
-  .hero{display:block;padding:60px 18px 35px} .hero-note{margin-top:30px}
+  .hero{padding:60px 18px 35px}
   .section{padding:30px 18px 60px} .grid{columns:1}
   .section-head{display:block} .section-head p{margin-top:8px}
 }
@@ -69,13 +71,9 @@ footer{border-top:1px solid var(--line);padding:35px 28px;text-align:center;colo
 <section class="hero">
   <div>
     <div class="kicker">ILLUSTRATION PORTFOLIO</div>
-    <h1>Drawing ideas<br>into shape.</h1>
+    <h1>こんなものを作っています。</h1>
     <p class="lead">イラストレーション、キャラクターデザイン、ゲーム・イベント関連のアートワークなど。用途や世界観に合わせて、絵とデザインをまとめて制作しています。</p>
   </div>
-  <aside class="hero-note">
-    <strong>ita</strong>
-    <p>イラストレーター・デザイナー・広告漫画家<br>フリーランス15年目。<br>このページは既存ポートフォリオPDFから、表紙を除いた作品をWeb向けに再構成したものです。</p>
-  </aside>
 </section>
 
 <section class="section" id="works">
@@ -243,6 +241,10 @@ footer{border-top:1px solid var(--line);padding:35px 28px;text-align:center;colo
   </div>
   <p class="lead">多摩美術大学グラフィックデザイン学科卒。デザイン制作会社でのWebデザイン経験を経てフリーランスへ。広告漫画を中心に活動し、現在はパーティーゲームやイベント関連のイラスト・デザインも手がけています。</p>
 </section>
+
+<div class="back-container">
+  <a href="https://fanatical-potato-5ca.notion.site/3cf754f1197f8020a533fe7472ffa374" class="back-btn">← 「主宰について」のページに戻る</a>
+</div>
 </main>
 
 <footer>© ita / Illustration & Design</footer>
